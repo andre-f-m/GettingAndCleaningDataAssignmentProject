@@ -45,88 +45,40 @@ The file contain 180 observations (columns)
  * subjectId          : integer  1 to 30: For every subject of the study.
  * activity           : factor   6 levels: WALKING,WALKING_UPSTAIRS, WALKING DOWNSTAIRS, SITTING,STANDING, LAYING. Describes the activity performed by every subject.
  
- Below all the measurements observations from numeric type:
+Below all the measurements observations from numeric type. Note that it was calculated the average for each variable for each activity and each subject. '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
  
- * tBodyAccMeanX
- * tBodyAccMeanY
- * tBodyAccMeanZ           
- * tBodyAccStdX
- * tBodyAccStdY
- * tBodyAccStdZ
- 
- * tGravityAccMeanX         
- * tGravityAccMeanY        
- * tGravityAccMeanZ
- * tGravityAccStdX
- * tGravityAccStdY
- * tGravityAccStdZ          
- 
- * tBodyAccJerkMeanX       
- * tBodyAccJerkMeanY
- * tBodyAccJerkMeanZ
- * tBodyAccJerkStdX
- * tBodyAccJerkStdY         
- * tBodyAccJerkStdZ        
- 
- * tBodyGyroMeanX
- * tBodyGyroMeanY
- * tBodyGyroMeanZ
- * tBodyGyroStdX            
- * tBodyGyroStdY           
- * tBodyGyroStdZ
- 
- * tBodyGyroJerkMeanX
- * tBodyGyroJerkMeanY
- * tBodyGyroJerkMeanZ       
- * tBodyGyroJerkStdX       
- * tBodyGyroJerkStdY
- * tBodyGyroJerkStdZ
- 
+ * tBodyAccMean-XYZ
+ * tBodyAccStd-XYZ
+ * tGravityAccMean-XYZ
+ * tGravityAccStd-XYZ
+ * tBodyAccJerkMean-XYZ
+ * tBodyAccJerkStd-XYZ
+ * tBodyGyroMean-XYZ
+ * tBodyGyroStd-XYZ
+ * tBodyGyroJerkMean-XYZ
+ * tBodyGyroJerkStd-XYZ   
  * tBodyAccMagMean
  * tBodyAccMagStd    
-
  * tGravityAccMagMean      
  * tGravityAccMagStd
-
  * tBodyAccJerkMagMean
  * tBodyAccJerkMagStd
-
  * tBodyGyroMagMean         
  * tBodyGyroMagStd 
-
  * tBodyGyroJerkMagMean
  * tBodyGyroJerkMagStd
- 
- * fBodyAccMeanX 
- * fBodyAccMeanY            
- * fBodyAccMeanZ           
- * fBodyAccStdX
- * fBodyAccStdY
- * fBodyAccStdZ
- 
- * fBodyAccJerkMeanX        
- * fBodyAccJerkMeanY       
- * fBodyAccJerkMeanZ
- * fBodyAccJerkStdX
- * fBodyAccJerkStdY
- * fBodyAccJerkStdZ         
- 
- * fBodyGyroMeanX          
- * fBodyGyroMeanY
- * fBodyGyroMeanZ
- * fBodyGyroStdX
- * fBodyGyroStdY            
- * fBodyGyroStdZ           
- 
+ * fBodyAccMean-XYZ
+ * fBodyAccStd-XYZ
+ * fBodyAccJerkMean-XYZ
+ * fBodyAccJerkStd-XYZ
+ * fBodyGyroMean-XYZ     
+ * fBodyGyroStd-XYZ
  * fBodyAccMagMean
  * fBodyAccMagStd
-
  * fBodyBodyAccJerkMagMean
  * fBodyBodyAccJerkMagStd  
-
  * fBodyBodyGyroMagMean    
  * fBodyBodyGyroMagStd
- 
  * fBodyBodyGyroJerkMagMean
  * fBodyBodyGyroJerkMagStd 
 
@@ -217,44 +169,4 @@ The file contain 180 observations (columns)
  
 
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
-
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
-
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
-
-The set of variables that were estimated from these signals are: 
-
-Mean: Mean value
-Std: Standard deviation
-
-
-Additional variablews obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
-
-The complete list of variables of each feature vector is available in 'features.txt'
+The complete description and information about the variables of each feature vector, plesae check inside the raw data at the file 'features.txt'
