@@ -133,6 +133,7 @@ The file contain 180 observations (columns)
 
 ### Data Summary
 
+```
    subjectId                  activity  tBodyAccMeanX    tBodyAccMeanY       tBodyAccMeanZ       tBodyAccStdX      tBodyAccStdY     
  Min.   : 1.0   WALKING           :30   Min.   :0.2216   Min.   :-0.040514   Min.   :-0.15251   Min.   :-0.9961   Min.   :-0.99024  
  1st Qu.: 8.0   WALKING_UPSTAIRS  :30   1st Qu.:0.2712   1st Qu.:-0.020022   1st Qu.:-0.11207   1st Qu.:-0.9799   1st Qu.:-0.94205  
@@ -212,7 +213,7 @@ The file contain 180 observations (columns)
  Mean   :-0.5992        Mean   :-0.6671      Mean   :-0.6723     Mean   :-0.7564          Mean   :-0.7715        
  3rd Qu.:-0.2668        3rd Qu.:-0.4087      3rd Qu.:-0.4277     3rd Qu.:-0.5831          3rd Qu.:-0.6081        
  Max.   : 0.3163        Max.   : 0.2040      Max.   : 0.2367     Max.   : 0.1466          Max.   : 0.2878  
- 
+``` 
  
 
 
